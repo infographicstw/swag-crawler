@@ -1,6 +1,6 @@
-require! <[fs request bluebird cheerio ../base/index]>
+require! <[fs request bluebird cheerio base]>
 
-(params) <- index.init \http://www.starbucks.com.tw/stores/storesearch/stores_storesearch.jspx .then
+(params) <- base.init \http://www.starbucks.com.tw/stores/storesearch/stores_storesearch.jspx .then
 #selCity = 1 - 29
 #selRegion = ALL
 
